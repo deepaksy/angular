@@ -1,0 +1,30 @@
+
+mat-card{
+    width: 60%;
+    margin: 12px;
+    padding: 10px;
+    margin: auto;
+    background-color: var(--cardBackgroundColor);
+    color: var(--textColor);
+}
+
+@media only screen and (max-width:500px) {
+    mat-card{
+        width: 80%;
+        min-height: 100px;
+        font-size: 20px;
+        margin-top:5px;
+        margin-bottom: 5px;
+    }
+    mat-card-header{
+        padding: 10px;
+    }
+    mat-card-content{
+        padding: 10px;
+        font-size: large;
+    }
+    mat-divider{
+        color: var(--textColor);
+        background-color: var(--backgroundColor);
+    }
+}

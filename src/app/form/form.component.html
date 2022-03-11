@@ -1,0 +1,22 @@
+    <form [formGroup]="StudentForm" (ngSubmit)="Onsubmit()">
+      <h1 class="mat-display-1 mat-caption">Form<mat-divider></mat-divider></h1>
+      
+      <mat-form-field  appearance="outline" color="yellow">
+        <mat-label>Name</mat-label>
+        <input matInput required formControlName="name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Address</mat-label >
+        <input matInput required formControlName="address">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label >
+        <input type="email" matInput required formControlName="email">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label >
+        <input matInput required type="password" formControlName="password">
+      </mat-form-field>
+      <button type="submit" mat-button color="warm">Submit</button>
+    </form>
+

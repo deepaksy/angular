@@ -1,0 +1,19 @@
+
+
+<p class="navbar">
+  <mat-toolbar>
+    <button *ngIf="(isHandset$|async)"  mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <a class="links" [routerLink]="''"><span>Student portal</span></a>
+    <span class="example-spacer"></span>
+    <button mat-icon-button (click)="themeToggle()" class="theme" aria-label="Example icon-button with share icon">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button  class="theme" aria-label="Example icon-button with share icon">
+      <a class="links" routerLink="StudentForm">Form</a>
+    </button>
+  </mat-toolbar>
+</p>
+

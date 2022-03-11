@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import "theme.css";
+html, body { height: 100%; }
+body { 
+	background-color: var(--backgroundColor); 
+	color: var(--textColor); 
+	margin: 0; 
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.links{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .links:hover{
+	  color: #9e9d9b;
+	  transition: color .2s ease-in;
+  }
+  .links:active{
+	  color: #706f6fde;
+	  transition: none;
+  }

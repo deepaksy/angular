@@ -1,0 +1,16 @@
+.theme{
+
+}
+
+.navbar{
+    width: 100%;
+}
+
+mat-toolbar{
+    justify-content: space-between;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}

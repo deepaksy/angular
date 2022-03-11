@@ -1,0 +1,17 @@
+<mat-card *ngIf="fullcard==false">
+    <mat-card-header>{{data.title}}</mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        {{data.content}}
+    </mat-card-content>
+</mat-card>
+
+<mat-card *ngIf="fullcard==true">
+    <mat-card-header>{{data.title}}</mat-card-header>
+    <mat-card-subtitle>{{data.subtitle}}</mat-card-subtitle>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        {{data.content}}
+    </mat-card-content>
+    <mat-card-footer [style.padding]="'10px 15px'">{{data.footer}}</mat-card-footer>
+</mat-card>

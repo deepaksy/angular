@@ -1,0 +1,15 @@
+1. Angular application is made of Components.
+
+It is a modular useful framework for building featurefull web application.
+
+TOpics:
+
+1. Data passing via @Input decotators.
+
+2. Using *ngif for directive 
+3. Style binding [style]="styleVariable"
+4. Event binding ex: (click)="handleClickEvent()"
+5. Class binding ex [class]="'form-content'"
+6. Interpolation = {{title}}
+7. Components
+8. Template refrence Variable.

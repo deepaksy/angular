@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, SimpleChanges } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -10,22 +10,30 @@ import { ThemeService } from './theme.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public siteTitle:string="StudentPortal";
+  public static projectTitle:string="Angular";
+  public  siteTitle:string=AppComponent.projectTitle;
   currentTheme:string; // Theming
   isHandset: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
   .pipe(
     map(result => result.matches),
     shareReplay()
   );
-
+    ngOnInit(): void {
+      //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+      //Add 'implements OnInit' to the class.
+      this.themeServices.setinitialTheme();
+      this.currentTheme=(this.themeServices.getcurrentTheme()||"");
+      console.log("Oninit called")
+      
+    }
 constructor(private breakpointObserver: BreakpointObserver,private themeServices:ThemeService) {
-  this.themeServices.setinitialTheme();
   this.currentTheme=(this.themeServices.getcurrentTheme()||"");
+  console.log("Constructor called")
 
 }
 themeToggle(){
   this.themeServices.handleTheme();
   this.currentTheme=(this.themeServices.getcurrentTheme()||"");
-  console.log(this.currentTheme)
+  // console.log(this.currentTheme)
 }
 }

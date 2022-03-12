@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { AppComponent } from '../app.component';
 Title
 @Component({
   selector: 'app-about',
@@ -11,7 +12,7 @@ export class AboutComponent implements OnInit {
   constructor(private titleService:Title) { }
   pageTitle:string='';
   ngOnInit(): void {
-    this.pageTitle ="about | "+this.titleService.getTitle()
+    this.pageTitle =AppComponent.projectTitle+" - about"
     this.titleService.setTitle(this.pageTitle)
   }
 

@@ -5,9 +5,11 @@
         [opened]="false">
       <mat-toolbar>Menu</mat-toolbar>
       <mat-nav-list>
-        <a mat-list-item  [routerLink]="'StudentForm'" (click)="drawer.close()">Student form</a>
+        <a mat-list-item  [routerLink]="'reactive-forms'" (click)="drawer.close()">Reactive Form</a>
         <a mat-list-item href="#">Link 2</a>
         <a mat-list-item [routerLink]="'about'" (click)="drawer.close()">about</a>
+        <a mat-list-item [routerLink]="'error'" (click)="drawer.close()">Error Page</a>
+        <a mat-list-item [routerLink]="'redirect'" (click)="drawer.close()">Redirect Demo</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
@@ -16,13 +18,13 @@
           <mat-icon>menu</mat-icon>
         </button>
     
-        <a class="links" [routerLink]="''"><span>Student portal</span></a>
+        <a class="links" [routerLink]="''"><span>{{siteTitle}}</span></a>
         <span class="example-spacer"></span>
-        <span (click)="themeToggle()">
-          <mat-icon *ngIf="currentTheme==''">dark_mode</mat-icon>
+
+          <button mat-icon-button (click)="themeToggle()"><mat-icon *ngIf="currentTheme==''">dark_mode</mat-icon>
             <mat-icon *ngIf="currentTheme=='light'">dark_mode</mat-icon>
-            <mat-icon *ngIf="currentTheme=='dark'">light_mode</mat-icon>
-        </span>
+            <mat-icon *ngIf="currentTheme=='dark'">light_mode</mat-icon></button>
+
       </mat-toolbar>
       <!-- Add Content Here -->
       <router-outlet></router-outlet>

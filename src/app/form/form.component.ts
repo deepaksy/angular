@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-form',
@@ -10,7 +11,7 @@ import { Title } from '@angular/platform-browser';
 export class FormComponent implements OnInit {
 
   constructor(private titleService:Title) { this.setinitialTheme()
-  this.titleService.setTitle('Student form')
+  this.titleService.setTitle(AppComponent.projectTitle+' - Reactive Form')
   }
 
   currentTheme:any;

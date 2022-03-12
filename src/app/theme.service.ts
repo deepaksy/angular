@@ -13,12 +13,12 @@ export class ThemeService {
     if(this.currentTheme=="dark"){
       
       document.documentElement.setAttribute("data-theme","light");
-      console.log("Themetoggle: light")
+      // console.log("Themetoggle: light")
       localStorage.setItem("data-theme","light");
       }
       else{
         document.documentElement.setAttribute("data-theme","dark");
-      console.log("Themetoggle: dark")
+      // console.log("Themetoggle: dark")
       localStorage.setItem("data-theme","dark");
       }
   }
@@ -26,11 +26,15 @@ export class ThemeService {
   setinitialTheme(){
     let gettheme:any =localStorage.getItem("data-theme");
     document.documentElement.setAttribute("data-theme",gettheme);
-	console.log("initial theme called")
-  console.log(gettheme)
+  console.log("InitialTheme:"+gettheme)
   }
 
   getcurrentTheme(){
     return localStorage.getItem("data-theme");
+  }
+
+  setTheme(theme:string){
+    document.documentElement.setAttribute("data-theme",theme);
+    localStorage.setItem("data-theme",theme);
   }
 }

@@ -1,14 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
-	--backgroundColor:#ffffff;
-	--textColor:#212121;
-	--cardBackgroundColor:rgb(231, 224, 225);
+	--backgroundColor:#212121;
+	--textColor:whitesmoke;
+	--cardBackgroundColor:rgb(89, 89, 92);
 }
 
 
 [data-theme="dark"]{
 	--backgroundColor:#212121;
 	--textColor:whitesmoke;
-	--accordion:#323232;
 	--cardBackgroundColor:rgb(89, 89, 92);
+}
+
+[data-theme="light"]{
+	--backgroundColor:#ffffff;
+	--textColor:#212121;
+	--cardBackgroundColor:rgb(231, 224, 225);
 }

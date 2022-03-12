@@ -13,14 +13,12 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { TestComponent } from './test/test.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
 import { CardComponent } from './components/card/card.component';
 import { AboutComponent } from './about/about.component';
 import { ThemeService } from './theme.service';
+import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +27,9 @@ import { ThemeService } from './theme.service';
     HomeComponent,
     TestComponent,
     CardComponent,
-    AboutComponent
+    AboutComponent,
+    TwowaybindingComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -39,11 +39,8 @@ import { ThemeService } from './theme.service';
     FormsModule,
     ReactiveFormsModule,
     LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
+    HttpClientModule
+
   ],
   providers: [Title,ThemeService],
   bootstrap: [AppComponent]

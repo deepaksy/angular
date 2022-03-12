@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { AppComponent } from '../app.component';
 import {CardData,SiteInfo,anoterdtat} from '../data/cardData';
 @Component({
   selector: 'app-home',
@@ -8,13 +9,15 @@ import {CardData,SiteInfo,anoterdtat} from '../data/cardData';
 })
 export class HomeComponent implements OnInit {
   siteinfo=SiteInfo;
+  greet="none";
   carddata=CardData;
   other = anoterdtat;
   constructor(private titleService:Title) { 
-    this.titleService.setTitle('Student Portal');
+    this.titleService.setTitle(AppComponent.projectTitle +' - Home');
   }
 
   ngOnInit(): void {
   }
+  handleGreet =()=>{ this.greet="block"}
 
 }

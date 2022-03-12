@@ -1,7 +1,17 @@
 
-<h1 >Welcome to student portal</h1>
+  <h1 [style.display]="greet">WELCOME {{inputRef.value | uppercase}} ! </h1>
+<div [class]="'WelcomeForm'">
+    <mat-form-field [ngClass]="'WelcomeForm'" appearance="fill">
+        <form (submit)="handleGreet()">
+          <mat-label>What's Your name?</mat-label>
+        <input matInput #inputRef >
+        </form>
+      </mat-form-field>
+</div>
 <app-card [data]="carddata" [fullcard]="false"></app-card>
 <a class="links" routerLink="StudentForm">Form</a>
 <app-card [data]="siteinfo" [fullcard]="false"></app-card>
 
 <app-card [data]="other" [fullcard]="true"></app-card>
+
+<a class="links" routerLink="twowaybinding">Two Way Binding</a>

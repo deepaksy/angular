@@ -1,5 +1,6 @@
 
   <h1 [style.display]="greet">WELCOME {{inputRef.value | uppercase}} ! </h1>
+  {{this.date.getdate | date}}
 <div [class]="'WelcomeForm'">
     <mat-form-field [ngClass]="'WelcomeForm'" appearance="fill">
         <form (submit)="handleGreet()">

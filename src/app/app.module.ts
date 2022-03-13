@@ -19,6 +19,7 @@ import { ThemeService } from './theme.service';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TemplateFormComponent } from './template-form/template-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     CardComponent,
     AboutComponent,
     TwowaybindingComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,

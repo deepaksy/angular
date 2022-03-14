@@ -21,6 +21,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HttpClientModule } from '@angular/common/http';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { MemesComponent } from './memes/memes.component';
+import { ChipComponent } from './components/chip/chip.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { MemesComponent } from './memes/memes.component';
     TwowaybindingComponent,
     PageNotFoundComponent,
     TemplateFormComponent,
-    MemesComponent
+    MemesComponent,
+    ChipComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,7 @@
+    <mat-chip-list>
+        <mat-chip disableRipple="{{isRipple?false:true}}" selectable="false">{{content}}</mat-chip>
+        <mat-chip-avatar *ngIf="isavatar">
+            <img src="{{avatar}}" alt="{{avatarAlt}}"/>
+        </mat-chip-avatar>
+    </mat-chip-list>
+

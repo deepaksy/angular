@@ -21,7 +21,5 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
   handleGreet =()=>{ this.greet="block"}
-  getdate(day:number,month:number,year:number):Date{
-    return new Date(year,month,day);
-  }
+
 }

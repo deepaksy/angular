@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatChipsModule} from '@angular/material/chips';
 const MaterialComponents =[
   MatButtonModule,
   MatGridListModule,
@@ -28,7 +29,9 @@ const MaterialComponents =[
   MatListModule,
   MatDividerModule,
   MatCardModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatListModule,
+  MatChipsModule
 ]
 @NgModule({
   imports: [MaterialComponents],

@@ -1,4 +1,35 @@
+#angular-logo{
+    width:10rem;
+    padding: 12px;
+    margin: 12px;
+}
+
+#home-greet{
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    font-size: 1.29em;
+}
 .WelcomeForm{
     width: 300px;
     margin: auto;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width:500px) {
+    #home-greet{
+        display: block;
+        padding: 12px;
+    }
+    .text{
+        font-size: small;
+    }
+    #angular-logo{
+        width:5rem;
+        padding: 12px;
+        margin: 12px;
+    }
 }

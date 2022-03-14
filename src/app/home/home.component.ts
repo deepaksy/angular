@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   greet="none";
   carddata=CardData;
   other = anoterdtat;
+  public angularLogoUrl='assets/angular.png';
   constructor(private titleService:Title,public date:DateService) { 
     this.titleService.setTitle(AppComponent.projectTitle +' - Home');
   }
@@ -20,5 +21,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
   handleGreet =()=>{ this.greet="block"}
-
+  getdate(day:number,month:number,year:number):Date{
+    return new Date(year,month,day);
+  }
 }

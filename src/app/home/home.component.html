@@ -1,7 +1,12 @@
-
-  <h1 [style.display]="greet">WELCOME {{inputRef.value | uppercase}} ! </h1>
-  {{this.date.getdate | date}}
+<section id="home-greet">
+  <img id="angular-logo" [src]="angularLogoUrl" alt="Angular">
+  <p [ngClass]="'text'">Angular, a powerful and feature rich Javascript web Framework
+    for building beautiful and rich user-interfaces. It was first Released in {{getdate(14,8,2016)|date}}
+  </p>
+</section>
+<mat-divider></mat-divider>
 <div [class]="'WelcomeForm'">
+  <h1 [style.display]="greet">WELCOME {{inputRef.value | uppercase}} ! </h1>
     <mat-form-field [ngClass]="'WelcomeForm'" appearance="fill">
         <form (submit)="handleGreet()">
           <mat-label>What's Your name?</mat-label>
@@ -9,6 +14,7 @@
         </form>
       </mat-form-field>
 </div>
+<mat-card>
 <app-card [data]="carddata" [fullcard]="false"></app-card>
 <a class="links" routerLink="StudentForm">Form</a>
 <app-card [data]="siteinfo" [fullcard]="false"></app-card>
@@ -16,3 +22,4 @@
 <app-card [data]="other" [fullcard]="true"></app-card>
 
 <a class="links" routerLink="twowaybinding">Two Way Binding</a>
+</mat-card>

@@ -6,9 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 For this Project you need to do some Initial setups in according to work properly.
 
-- Add CLI command for Material package 
+- Fork this project 
 
-- `ng add @angular/material`
+- initialize git repository to empty folder.
+
+- add remote git to the forked repositry.
+
+- `$terminal/<project-name> > git pull`
+
+- install dependencies : `npm install`.
 
 
 ## Development server

@@ -1,0 +1,15 @@
+.template-form{
+    width: 50%;
+    margin: auto;
+    padding: 12px;
+    margin-top: 5rem;
+}
+
+@media only screen and (max-width:500px){
+    .template-form{
+        width: 90%;
+        margin: auto;
+        padding: 12px;
+        margin-top: 5rem;
+    }
+}

@@ -13,5 +13,9 @@ export class DateService {
   getDate(day:number,month:number,year:number):Date{
     return new Date(year,month,day);
   }
+
+  getcurrentdate():Date{
+    return new Date();
+  }
   
 }

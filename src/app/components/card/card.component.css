@@ -1,11 +1,23 @@
 
 mat-card{
     width: 60%;
-    margin: 12px;
     padding: 10px;
     margin: auto;
+    margin-top:10px;
+    margin-bottom: 10px;
     background-color: var(--cardBackgroundColor);
     color: var(--textColor);
+}
+
+mat-card-header{
+    font-size: large;
+    padding: 10px;
+    font-weight: 500;
+}
+
+mat-card-content{
+    padding: 10px;
+    font-size: 1em;
 }
 
 @media only screen and (max-width:500px) {

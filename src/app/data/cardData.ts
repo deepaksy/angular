@@ -1,6 +1,8 @@
 export const CardData = {
-    title:'My card demo',
-    content:'This is the content of the card.'
+    title:'Steps to create angular project',
+    content:`
+    Angular is one of the good web javascript framework that is always
+    `
 }
 
 export const SiteInfo = {

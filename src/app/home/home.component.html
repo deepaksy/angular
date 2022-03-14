@@ -5,6 +5,7 @@
   </p>
 </section>
 <mat-divider></mat-divider>
+<div [ngClass]="'date'">{{date.getcurrentdate()|date:'fullDate'}}</div>
 <div [class]="'WelcomeForm'">
   <h1 [style.display]="greet">WELCOME {{inputRef.value | uppercase}} ! </h1>
     <mat-form-field [ngClass]="'WelcomeForm'" appearance="fill">
@@ -15,8 +16,7 @@
       </mat-form-field>
 </div>
 <mat-card>
-<app-card [data]="carddata" [fullcard]="false"></app-card>
-<a class="links" routerLink="StudentForm">Form</a>
+<app-card  [data]="carddata" [fullcard]="false"></app-card>
 <app-card [data]="siteinfo" [fullcard]="false"></app-card>
 
 <app-card [data]="other" [fullcard]="true"></app-card>

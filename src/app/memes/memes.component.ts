@@ -16,7 +16,6 @@ export class MemesComponent implements OnInit {
     this.memeapi.getmemes().subscribe((res:any)=>{
       this.memes = res['data']['memes'];
       console.log(this.memes)
-      console.log(res['data']['memes'])
     })
   }
 
